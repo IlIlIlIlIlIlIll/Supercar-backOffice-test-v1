@@ -4,6 +4,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import java.awt.Button;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Home extends JFrame {
 
@@ -35,6 +38,13 @@ public class Home extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		
+		Button button = new Button("Connexion");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		contentPane.add(button, BorderLayout.SOUTH);
 	}
 
 }
